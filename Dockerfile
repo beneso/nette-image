@@ -1,4 +1,4 @@
-FROM obenes/alpine-httpd-php:php7
+FROM obenes/alpine-httpd-php
 ENV HTTP_ROOT /var/www/localhost/htdocs
 WORKDIR ${HTTP_ROOT}
 RUN rm -rf ${HTTP_ROOT}/* ${HTTP_ROOT}/.[[:alnum:]]* ; \
